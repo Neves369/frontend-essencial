@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- O DOCTYPE define que este documento é HTML5 -->
+<html lang="pt-BR">
+<head>
+    <!-- Configurações que não aparecem na página (Metadados) -->
+    <meta charset="UTF-8"> <!-- Suporte a acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    
+    <!-- Metadados úteis para SEO -->
+    <meta name="description" content="Aula de Fundamentos de HTML">
+    <meta name="author" content="Professor de Frontend">
+
+    <title>Aula 1: Introdução ao Frontend e HTML</title>
+
+    <style>
+        /* CSS Mínimo */
+        body { font-family: sans-serif; line-height: 1.5; padding: 20px; max-width: 800px; margin: auto; }
+        section { border-bottom: 2px solid #ccc; margin-bottom: 30px; padding-bottom: 20px; }
+        code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+        .comentario { color: green; font-style: italic; }
+        hr { margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dia 1: Introdução ao Frontend e HTML</h1>
+        <p>Este arquivo é uma ferramenta didática. Abra o código fonte (Ctrl + U) para ver os comentários técnicos.</p>
+    </header>
+
+    <hr>
+
+    <!-- 1. INTRODUÇÃO AO FRONTEND -->
+    <section>
+        <h2>1. Introdução ao Frontend</h2>
+        <p><strong>Frontend:</strong> O que o usuário vê (HTML, CSS, JavaScript).</p>
+        <p><strong>Backend:</strong> O que o servidor processa (Lógica, Banco de Dados).</p>
+        <p><strong>Linguagens:</strong> Marcar (HTML), Estilizar (CSS), Programar (JS).</p>
+    </section>
+
+    <!-- 2. ESTRUTURA BÁSICA -->
+    <section>
+        <h2>2. Estrutura Básica de um Documento</h2>
+        <!-- Explicação em texto simples para os alunos -->
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Declaração da versão.</li>
+            <li><code>&lt;html&gt;</code>: Início e fim do documento.</li>
+            <li><code>&lt;head&gt;</code>: Informações da "cabeça" (não aparecem na tela).</li>
+            <li><code>&lt;body&gt;</code>: O "corpo" da página (o que aparece).</li>
+        </ul>
+    </section>
+
+    <!-- 3. TAGS ESSENCIAIS -->
+    <section>
+        <h2>3. Tags Essenciais do HTML</h2>
+        
+        <h3>Tags de Cabeçalho (h1 até h6)</h3>
+        <h1>Esse é um H1 (Mais importante)</h1>
+        <h2>Esse é um H2</h2>
+        <h3>Esse é um H3</h3>
+        <h6>Esse é um H6 (Menos importante)</h6>
+
+        <h3>Parágrafos e Formatação</h3>
+        <p>Isso é um parágrafo usando a tag <code>&lt;p&gt;</code>.</p>
+        
+        <p><b>Negrito visual (b)</b></p>
+        <p><strong>Negrito semântico (mais importante para acessibilidade)</strong></p>
+        <p><i>Itálico visual (i)</i></p>
+        <p><u>Sublinhado (u)</u></p>
+        <p><mark>Marca-texto (mark)</mark></p>
+        <p><small>Texto pequeno (small)</small></p>
+        <p><del>Texto riscado/deletado (del)</del></p>
+        <p><ins>Texto sublinhado de inserção (ins)</ins></p>
+        <p>H<sub>2</sub>O (Subscrito)</p>
+        <p>10<sup>2</sup> (Sobrescrito)</p>
+    </section>
+
+    <!-- 4. LINKS E DIVISÕES -->
+    <section>
+        <h2>4. Links e Divisões</h2>
+
+        <h3>Link (tag 'a' de âncora)</h3>
+        <p><a href="https://www.google.com" target="_blank">Clique aqui para ir ao Google (Abre em nova aba)</a></p>
+
+        <h3>Divisões (DIV vs SPAN)</h3>
+        
+        <div style="background-color: #ddd; padding: 10px;">
+            Eu sou uma <code>&lt;div&gt;</code>. Sou um elemento de <b>bloco</b>. 
+            Ocupo toda a largura da linha.
+        </div>
+
+        <p>
+            Eu sou um parágrafo com um <span style="color: blue; text-decoration: underline;">SPAN</span> aqui dentro.
+            O <code>&lt;span&gt;</code> é um elemento de <b>linha (inline)</b>, ele não quebra a linha.
+        </p>
+    </section>
+
+    <footer>
+        <p><small>Aula preparada para fins didáticos.</small></p>
+    </footer>
+
+</body>
+</html>
