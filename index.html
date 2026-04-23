@@ -1,102 +1,125 @@
 <!DOCTYPE html>
-<!-- O DOCTYPE define que este documento é HTML5 -->
 <html lang="pt-BR">
 <head>
-    <!-- Configurações que não aparecem na página (Metadados) -->
-    <meta charset="UTF-8"> <!-- Suporte a acentos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
-    
-    <!-- Metadados úteis para SEO -->
-    <meta name="description" content="Aula de Fundamentos de HTML">
-    <meta name="author" content="Professor de Frontend">
-
-    <title>Aula 1: Introdução ao Frontend e HTML</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dia 2</title>
     <style>
-        /* CSS Mínimo */
-        body { font-family: sans-serif; line-height: 1.5; padding: 20px; max-width: 800px; margin: auto; }
-        section { border-bottom: 2px solid #ccc; margin-bottom: 30px; padding-bottom: 20px; }
-        code { background: #eee; padding: 2px 5px; border-radius: 4px; }
-        .comentario { color: green; font-style: italic; }
-        hr { margin: 40px 0; }
+        /* Estilos básico*/
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; color: #333; }
+        header, footer { background: #f4f4f4; padding: 1rem; text-align: center; border-radius: 8px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; justify-content: center; }
+        section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        form { display: grid; gap: 10px; background: #fafafa; padding: 15px; border-radius: 5px; }
+        .comentario-visual { color: #666; font-style: italic; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
+    <!-- 1. HTML SEMÂNTICO (Estrutura Principal) -->
+    <!-- <header> define o cabeçalho da página. Melhora SEO e ajuda leitores de tela a identificar o topo. -->
     <header>
-        <h1>Dia 1: Introdução ao Frontend e HTML</h1>
-        <p>Este arquivo é uma ferramenta didática. Abra o código fonte (Ctrl + U) para ver os comentários técnicos.</p>
+        <h1>Meu Site Semântico - Dia 2</h1>
+        
+        <!-- <nav> indica que este bloco contém links de navegação principal. Fundamental para acessibilidade. -->
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <hr>
+    <!-- <main> envolve o conteúdo principal e exclusivo desta página. Deve haver apenas um por página. -->
+    <main>
 
-    <!-- 1. INTRODUÇÃO AO FRONTEND -->
-    <section>
-        <h2>1. Introdução ao Frontend</h2>
-        <p><strong>Frontend:</strong> O que o usuário vê (HTML, CSS, JavaScript).</p>
-        <p><strong>Backend:</strong> O que o servidor processa (Lógica, Banco de Dados).</p>
-        <p><strong>Linguagens:</strong> Marcar (HTML), Estilizar (CSS), Programar (JS).</p>
-    </section>
+        <!-- <section> agrupa conteúdos que possuem um mesmo tema. -->
+        <section>
+            <h2>Exemplos de Listas</h2>
+            
+            <!-- <ul> (Unordered List): Itens onde a ordem NÃO importa (marcadores de ponto). -->
+            <h3>Minha Lista de Desejos (ul)</h3>
+            <ul>
+                <li>Viajar para a Europa</li> <!-- <li>: Item da lista (List Item) -->
+                <li>Aprender React</li>
+                <li>Comprar um monitor novo</li>
+            </ul>
 
-    <!-- 2. ESTRUTURA BÁSICA -->
-    <section>
-        <h2>2. Estrutura Básica de um Documento</h2>
-        <!-- Explicação em texto simples para os alunos -->
-        <ul>
-            <li><code>&lt;!DOCTYPE html&gt;</code>: Declaração da versão.</li>
-            <li><code>&lt;html&gt;</code>: Início e fim do documento.</li>
-            <li><code>&lt;head&gt;</code>: Informações da "cabeça" (não aparecem na tela).</li>
-            <li><code>&lt;body&gt;</code>: O "corpo" da página (o que aparece).</li>
-        </ul>
-    </section>
+            <!-- <ol> (Ordered List): Itens onde a ordem É fundamental (passos, rankings). -->
+            <h3>Passo a passo para estudar (ol)</h3>
+            <ol>
+                <li>Ler a documentação</li>
+                <li>Praticar o código</li>
+                <li>Fazer os exercícios</li>
+            </ol>
 
-    <!-- 3. TAGS ESSENCIAIS -->
-    <section>
-        <h2>3. Tags Essenciais do HTML</h2>
-        
-        <h3>Tags de Cabeçalho (h1 até h6)</h3>
-        <h1>Esse é um H1 (Mais importante)</h1>
-        <h2>Esse é um H2</h2>
-        <h3>Esse é um H3</h3>
-        <h6>Esse é um H6 (Menos importante)</h6>
+            <!-- <dl> (Description List): Usada para glossários ou pares de Chave/Valor. -->
+            <h3>Dicionário Simples (dl)</h3>
+            <dl>
+                <!-- <dt> (Description Term): O termo que está sendo definido. -->
+                <dt>HTML</dt>
+                <!-- <dd> (Description Details): A explicação ou definição do termo. -->
+                <dd>Linguagem usada para estruturar páginas na web.</dd>
+                
+                <dt>CSS</dt>
+                <dd>Linguagem usada para estilizar e dar cor às páginas.</dd>
+            </dl>
+        </section>
 
-        <h3>Parágrafos e Formatação</h3>
-        <p>Isso é um parágrafo usando a tag <code>&lt;p&gt;</code>.</p>
-        
-        <p><b>Negrito visual (b)</b></p>
-        <p><strong>Negrito semântico (mais importante para acessibilidade)</strong></p>
-        <p><i>Itálico visual (i)</i></p>
-        <p><u>Sublinhado (u)</u></p>
-        <p><mark>Marca-texto (mark)</mark></p>
-        <p><small>Texto pequeno (small)</small></p>
-        <p><del>Texto riscado/deletado (del)</del></p>
-        <p><ins>Texto sublinhado de inserção (ins)</ins></p>
-        <p>H<sub>2</sub>O (Subscrito)</p>
-        <p>10<sup>2</sup> (Sobrescrito)</p>
-    </section>
+        <section>
+            <!-- <article> representa um conteúdo que faz sentido por si só (ex: um post ou comentário). -->
+            <article>
+                <h2>Área de Formulário</h2>
+                <p>O formulário abaixo demonstra como capturar dados do usuário com validação básica.</p>
 
-    <!-- 4. LINKS E DIVISÕES -->
-    <section>
-        <h2>4. Links e Divisões</h2>
+                <!-- <form> container que agrupa os campos. 'action' define para onde enviar os dados. -->
+                <form action="#" method="POST">
+                    
+                    <!-- <label>: Conecta o texto ao input através do atributo 'for' e do 'id' do input. 
+                         Isso é CRUCIAL para acessibilidade. -->
+                    <label for="username">Nome de Usuário (Obrigatório):</label>
+                    <!-- 'required' impede o envio se o campo estiver vazio. -->
+                    <input type="text" id="username" name="username" required placeholder="Ex: dev_neves">
 
-        <h3>Link (tag 'a' de âncora)</h3>
-        <p><a href="https://www.google.com" target="_blank">Clique aqui para ir ao Google (Abre em nova aba)</a></p>
+                    <label for="idade">Idade (Apenas números):</label>
+                    <!-- 'pattern' utiliza Regex para validar o formato. \d* significa apenas dígitos. -->
+                    <input type="text" id="idade" name="idade" pattern="\d*" title="Por favor, digite apenas números.">
 
-        <h3>Divisões (DIV vs SPAN)</h3>
-        
-        <div style="background-color: #ddd; padding: 10px;">
-            Eu sou uma <code>&lt;div&gt;</code>. Sou um elemento de <b>bloco</b>. 
-            Ocupo toda a largura da linha.
-        </div>
+                    <!-- Inputs tipo Radio: Permitem apenas uma escolha dentro do mesmo 'name'. -->
+                    <p>Qual seu nível de experiência?</p>
+                    <label>
+                        <input type="radio" name="nivel" value="junior" checked> Iniciante
+                    </label>
+                    <label>
+                        <input type="radio" name="nivel" value="pleno"> Intermediário
+                    </label>
 
-        <p>
-            Eu sou um parágrafo com um <span style="color: blue; text-decoration: underline;">SPAN</span> aqui dentro.
-            O <code>&lt;span&gt;</code> é um elemento de <b>linha (inline)</b>, ele não quebra a linha.
-        </p>
-    </section>
+                    <!-- Checkbox: Permite múltiplas seleções (ou apenas confirmação). -->
+                    <label>
+                        <input type="checkbox" name="newsletter" checked> Desejo receber notificações
+                    </label>
 
+                    <!-- Botões de ação dentro do formulário. -->
+                    <div>
+                        <button type="button">Botão Simples (JS)</button>
+                        <button type="submit">Enviar Formulário (Submit)</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <!-- <aside> serve para conteúdos laterais ou tangenciais (anúncios, links rápidos). -->
+        <aside>
+            <h4>Dica do Mentor</h4>
+            <p>Sempre use <code>&lt;label&gt;</code> para seus inputs, isso aumenta a área de clique!</p>
+        </aside>
+
+    </main>
+
+    <!-- <footer> define o rodapé, comumente usado para copyright, links legais ou redes sociais. -->
     <footer>
-        <p><small>Aula preparada para fins didáticos.</small></p>
+        <p>&copy; 2024 - Prática de HTML Semântico</p>
     </footer>
 
 </body>
