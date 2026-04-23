@@ -1,6 +1,6 @@
-# 🚀 Dia 2: Estrutura e Semântica HTML, Formulários e Listas
+# Dia 2: Estrutura e Semântica HTML, Formulários e Listas
 
-## 🎯 Objetivo da Aula
+## Objetivo da Aula
 Aprofundar o uso do HTML com foco em organização, semântica e criação de formulários interativos.
 
 ---
@@ -128,7 +128,7 @@ A ponte principal entre o usuário e o servidor para coleta de dados.
 
 ---
 
-## 📝 Exercícios de Fixação
+## Exercícios de Fixação
 
 ### Exercício 1
 Crie um arquivo HTML que contenha uma lista de compras (`<ul>`) e uma lista de passos para um tutorial (`<ol>`).
@@ -141,10 +141,10 @@ Crie um formulário de contato completo com campos de Nome, Email, Assunto e um 
 
 ---
 
-## 🏁 Resumo
+## Resumo
 Nesta aula você aprendeu como organizar dados de forma lógica com **listas**, como dar significado à sua estrutura com **HTML Semântico** e como iniciar interações com o usuário através de **formulários**.
 
-## 📅 Próximo Passo
+## Próximo Passo
 No **Dia 3**, mergulharemos no mundo das cores e estilos com:
 *   **Introdução ao CSS**
 *   **Seletores e Cores**
